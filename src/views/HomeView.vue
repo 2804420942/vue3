@@ -15,6 +15,7 @@ export default defineComponent({
     HelloWorld,
   },
   setup() {
+    
     onRenderTracked((event) => {
       console.log("状态跟踪组件----------->");
       console.log(event);

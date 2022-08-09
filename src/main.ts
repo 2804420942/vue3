@@ -6,4 +6,5 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import '@/mock/mock'
 
+console.log(router)
 createApp(App).use(store).use(router).use(Antd).mount("#app");

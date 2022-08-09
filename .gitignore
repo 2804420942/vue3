@@ -21,3 +21,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+/nuxt-demo/node_modules
+/nuxt-demo/.nuxt

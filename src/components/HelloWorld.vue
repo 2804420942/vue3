@@ -1,3 +1,16 @@
+<template>
+  <h1>{{ msg }}</h1>
+  <p>
+    {{count}}
+  </p>
+  <p>
+    {{obj.count}}
+  </p>
+  <button @click="inc">
+    inc
+  </button>
+</template>
+
 <script setup>
 import { ref, reactive } from 'vue'
 
@@ -12,16 +25,3 @@ const inc = function() {
 }
 
 </script>
-
-<template>
-  <h1>{{ msg }}</h1>
-  <p>
-    {{count}}
-  </p>
-  <p>
-    {{obj.count}}
-  </p>
-  <button @click="inc">
-    inc
-  </button>
-</template>

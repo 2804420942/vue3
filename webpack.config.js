@@ -9,6 +9,24 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
+    clean: true
+  },
+  module: {
+    rules: [
+      {
+        test: /.\css$/,
+        use: ['css-loader']
+      }
+
+    ]
+  }
+}
+
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
     clean: true, 
   },
   module: {

@@ -15,9 +15,24 @@ export function fetch(url: any, params: any) {
   })
 }
 
+export function get(url: any, params: any) {
+  return new Promise((resolve, reject) => {
+    axios.get(url, params)
+      .then(response => {
+        resolve(response.data);
+      })
+      .catch((error) => {
+        reject(error);
+      })
+  })
+}
+
 export default {
   mockData(url: string, params?: any) {
     return fetch(url, params);
+  },
+  getData(url: string, params?: any) {
+    return get(url, params);
   }
 }
 
