@@ -45,9 +45,12 @@
 // url: "https://sports.sina.cn/bundesliga/germany/2022-06-14/detail-imizmscu6680692.d.html?vt=4&pos=108"
 // weburl: "https://sports.sina.com.cn/global/germany/2022-06
 import { reactive, toRefs } from 'vue'
+import { useRouter } from 'vue-router';
 import axios from '@/api/axios'
 
+const router = useRouter()
 
+console.log(router)
 
 const state = reactive({
   list: [],
@@ -82,7 +85,7 @@ const state = reactive({
 })
 
 
-function getData() {
+async function getData() {
   axios.mockData('/api/test').then((res: any) => {
     if(res.status === 200) {
       state.list = res.list || []
@@ -95,6 +98,8 @@ function getData() {
     }
     console.log(state.news)
   })
+  const res = await axios.getData('https://demo-demo-qeqbjjclcu.cn-hangzhou.fcapp.run');
+  console.log('ali:', res)
 }
 
 getData();

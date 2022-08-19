@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/proxy": "^2.1.0",
+    "axios": "^0.27.2",
+    "cookieparser": "^0.1.0",
+    "dayjs": "^1.11.4",
+    "js-cookie": "^3.0.1",
+    "markdown-it": "^13.0.1",
     "nuxt": "^2.15.8"
   }
 }

@@ -5,7 +5,8 @@
     <router-link to="/three">Three</router-link> |
     <router-link to="/mock">Mock</router-link> | 
     <router-link to="/lingo3d">lingo3d</router-link> | 
-    <router-link to="/markdown2PDF">markdown2PDF</router-link>
+    <router-link to="/markdown2PDF">markdown2PDF</router-link> | 
+    <router-link to="/todos">Todos</router-link>
   </nav>
   <router-view />
 </template>

@@ -37,6 +37,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import(/* webpackChunkName: "editor" */ "../views/markdown2PDF.vue"),
   },
+  {
+    path: "/todos",
+    name: "todos",
+    component: () =>
+      import(/* webpackChunkName: "editor" */ "../views/Todos/index.vue"),
+  },
 ];
 
 const router = createRouter({
